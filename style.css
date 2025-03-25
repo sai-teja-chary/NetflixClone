@@ -19,10 +19,46 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    margin-bottom: 10px;
     height: 40px;
 }
 
+.nav-btns{
+    display: flex;
+    gap: 12px;
+}
+
+.lang-button{
+    width: 120px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 25px;
+}
+.lang-button select{
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 14px;
+    color: white;
+    background-color: transparent;
+    border-style: hidden;
+    border-radius: 25px;
+    padding: 5px 25px 5px 25px;
+}
+
+.signin-btn{
+    width: 80px;
+    background-color:white;
+    color:black;
+    font-family: "Poppins";
+    font-weight: 800;
+    border-style: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.signin-btn:hover{
+    background-color: gray;
+}
 .hero img{
     width: 150px;
 }
@@ -110,12 +146,20 @@ nav{
     font-size: 16px;
 }
 .reason-box{
+    position: relative;
     font-size: 14px;
     width: 355px;
     height: 180px;
     padding: 10px;
     border: 2px solid white;
     border-radius: 20px;
+}
+
+.reason-box img{
+    position: absolute;
+    width: 50px;
+    bottom: 15px;
+    left: 300px;
 }
 
 .faq-container{
@@ -192,15 +236,21 @@ footer{
 
 footer p{
     font-size: 14px;
+
 }
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    margin-top: 40px;
+    margin: 40px 0;
+
     gap: 10px;
 }
 .grid ul {
     list-style: none;
+}
+
+.watermark{
+    margin-top: 40px;
 }
 
