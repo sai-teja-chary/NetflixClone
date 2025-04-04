@@ -174,7 +174,7 @@ nav{
     width: 355px;
     height: 180px;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.15);
     border: 1px solid rgba(255, 255, 255, 0.04);
     border-radius: 20px;
     margin-bottom: 20px;
@@ -188,16 +188,25 @@ nav{
 
 .faq-box{
     display: flex;
+    justify-content: space-between;
     align-items: center;
     font-size: 12px;
     font-weight: 50;
     width: 98%;
     height: 5rem;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.15);
     border: 1px solid rgba(255, 255, 255, 0.04);
     border-radius: 15px;
     padding-left: 20px;
     margin-bottom: 10px;
+}
+.faq-box:hover{
+    cursor: pointer;
+    background-color: rgba(116, 116, 116, 0.507);;
+}
+.faq-box img{
+    margin: 20px;
+    width: 25px;
 }
 
 h1{
@@ -247,6 +256,11 @@ h1{
     padding: 15px 40px;
 }
 
+.email-box button:hover{
+    cursor: pointer;
+    background-color: rgba(255, 0, 0, 0.747);
+}
+
 footer{
     max-width: 1300px;
     margin: auto;
@@ -274,7 +288,7 @@ footer p{
     margin-top: 40px;
 }
 
-@media screen and (min-width:800px){
+@media screen and (min-width:960px){
     .netflix-logo{
         width: 150px;
     }
@@ -282,12 +296,12 @@ footer p{
         display: none;
     }
 }
-@media screen and (max-width:799px){
+@media screen and (max-width:959px){
     .netflix-logo{
         display: none;
     }
     .n-logo{
-        width: 25px;
+        width: 18px;
     }
 }
 @media screen and (max-width:1919px) {
